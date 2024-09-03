@@ -17,12 +17,12 @@ A simple Python application using PyQt5 to generate random Dungeons & Dragons ch
 
 1. Clone the repository:
     ```bash
-    git clone [https://github.com/HileZ360/DnD-Character-Generator]
+    git clone https://github.com/HileZ360/DnD-Character-Generator
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd dnd-character-generator
+    cd DnD-Character-Generator
     ```
 
 3. Install dependencies:
@@ -32,7 +32,7 @@ A simple Python application using PyQt5 to generate random Dungeons & Dragons ch
 
 4. Run the application:
     ```bash
-    python character_generator.py
+    python main.py
     ```
 
 ## Usage
