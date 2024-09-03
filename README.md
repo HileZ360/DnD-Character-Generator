@@ -39,10 +39,6 @@ A simple Python application using PyQt5 to generate random Dungeons & Dragons ch
 
 - Click the **"Generate Character"** button to create a new D&D character.
 
-## Screenshot
-
-![Screenshot](https://ibb.co/1fbzBWs)
-
 ## Contributing
 
 Feel free to open issues or submit pull requests if you have suggestions or improvements.
