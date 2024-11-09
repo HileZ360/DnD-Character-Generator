@@ -50,7 +50,7 @@ spells = {
         "Level 1": ["Лечащее слово", "Благословение", "Щит веры", "Нанесение ран"]
     },
     "Druid": {
-        "Cantrips": ["Искусство друидов", "Сотворение пламени", "Шипы"],
+        "Cantrips": ["Искусство друдов", "Сотворение пламени", "Шипы"],
         "Level 1": ["Разговор с животными", "Опутывание", "Лечащее слово"]
     },
     "Sorcerer": {
@@ -245,7 +245,6 @@ class GlitchEffect(QLabel):
                 font-weight: 800;
                 letter-spacing: 4px;
                 text-transform: uppercase;
-                text-shadow: 0 0 10px rgba(0, 255, 159, 0.5);
             }
         """)
 
@@ -471,8 +470,7 @@ class CharacterGenerator(QMainWindow):
         html = f"""
         <div style='color: #e0e0e0; font-family: "Segoe UI"; letter-spacing: 1px;'>
             <h2 style='color: #00ff9f; margin-bottom: 25px; font-size: 24px; 
-                      text-transform: uppercase; letter-spacing: 3px;
-                      text-shadow: 0 0 10px rgba(0, 255, 159, 0.5);'>
+                      text-transform: uppercase; letter-spacing: 3px;'>
                 ⚔️ {character['Name']} ⚔️
             </h2>
             
@@ -488,8 +486,7 @@ class CharacterGenerator(QMainWindow):
             </div>
 
             <h3 style='color: #00ff9f; margin-top: 20px; 
-                      text-transform: uppercase; letter-spacing: 2px;
-                      text-shadow: 0 0 5px rgba(0, 255, 159, 0.3);'>
+                      text-transform: uppercase; letter-spacing: 2px;'>
                 📊 Характеристики
             </h3>
             <div style='background: rgba(0, 255, 159, 0.03);
@@ -508,8 +505,7 @@ class CharacterGenerator(QMainWindow):
         if 'spells' in character and character['spells']:
             html += f"""
                 <h3 style='color: #00ff9f; margin-top: 20px;
-                          text-transform: uppercase; letter-spacing: 2px;
-                          text-shadow: 0 0 5px rgba(0, 255, 159, 0.3);'>
+                          text-transform: uppercase; letter-spacing: 2px;'>
                     ✨ Заклинания
                 </h3>
                 <div style='background: rgba(0, 255, 159, 0.03);
@@ -532,12 +528,10 @@ class CharacterGenerator(QMainWindow):
 
     def display_character(self):
         try:
-
             character = generate_character()
             if character['Class'] in spells:
                 character['spells'] = generate_spells(character['Class'])
             
-
             self.character_label.setText(self.format_character_info(character))
             self.character_info = character
             
@@ -548,7 +542,6 @@ class CharacterGenerator(QMainWindow):
                     border-radius: 15px;
                     padding: 25px;
                     line-height: 1.6;
-                    animation: fade 0.3s ease-in-out;
                 }
             """)
             
